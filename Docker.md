@@ -15,7 +15,6 @@ done | awk -F'|' '{
 docker exec -it infra_elasticsearch bin/elasticsearch-reset-password -u kibana_system -i --url http://localhost:9200
 ```
 ---
-<br>
 ## لود کردن یکجا همه ایمیج‌ها:
 ```bash
 for f in *.tar; do echo "Loading $f..."; docker load -i "$f"; done
