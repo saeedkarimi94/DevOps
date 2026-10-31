@@ -17,3 +17,4 @@ docker exec -it infra_elasticsearch bin/elasticsearch-reset-password -u kibana_s
 ```bash
 for f in *.tar; do echo "Loading $f..."; docker load -i "$f"; done
 ```
+---
